@@ -26,7 +26,7 @@ module.exports = function ( menu ){
     }
     
     menu.setDefaultDegreeValue(findAutoDefaultDegree(nodes, properties, maxLinkCount));
-    var defaultDegree = findDefaultDegree(maxLinkCount);
+    var defaultDegree = 0; // findDefaultDegree(maxLinkCount);
     if ( degreeSetter instanceof Function ) {
       degreeSetter(defaultDegree);
       if ( defaultDegree > 0 ) {
